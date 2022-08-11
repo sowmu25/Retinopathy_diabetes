@@ -24,7 +24,7 @@ body {
 	width: 100%;
 	height:100%;
 	font-family: 'Open Sans', sans-serif;
-	background: #092756;
+	background: #817ae6;
 	color: #fff;
 	font-size: 18px;
 	text-align:center;
@@ -50,10 +50,10 @@ body {
 		<div class="results">
 			{% if prediction==1 %}
 				<h1>PREDICTION: <span class='danger'>Opps! You have RETINOPATHY DIABETES.</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='diabetes.webp') }}" alt="Diabetes Image">
+				<!--<img class="gif" src="{{ url_for('static', filename='diabetes.webp') }}" alt="Diabetes Image">-->
 			{% elif prediction==0 %}
 				<h1>PREDICTION: <span class='safe'>Wow ! You DON'T have RETINOPATHY DIABETES.</span></h1>
-				<img class="gif1" src="{{ url_for('static', filename='no-diabetes.webp') }}" alt="Not Diabetes Image">
+			<!--	<img class="gif1" src="{{ url_for('static', filename='no-diabetes.webp') }}" alt="Not Diabetes Image"> -->
 			{% endif %}
 		</div>
 
