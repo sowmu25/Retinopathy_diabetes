@@ -1,8 +1,5 @@
 import json
 import pickle
-
-
-
 from flask import Flask,request,app,jsonify,url_for,render_template
 import numpy as np
 import pandas as pd
@@ -32,7 +29,7 @@ def predict():
     print(final_input)
     output=classificationmodel.predict(final_input)[0]
     return render_template('result.html', prediction=output)
-    #return render_template("home.html",prediction_text="Retinopathy Diabetics prediction is {}".format(output))
+  
 
 
 
